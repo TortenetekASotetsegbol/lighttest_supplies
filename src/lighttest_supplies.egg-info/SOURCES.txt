@@ -5,6 +5,7 @@ src/lighttest_supplies/__init__.py
 src/lighttest_supplies/date_methods.py
 src/lighttest_supplies/encoding.py
 src/lighttest_supplies/general.py
+src/lighttest_supplies/general_datas.py
 src/lighttest_supplies/json_object_methods.py
 src/lighttest_supplies/randomisers.py
 src/lighttest_supplies/timers.py

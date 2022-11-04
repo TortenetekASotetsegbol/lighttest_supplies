@@ -16,3 +16,10 @@ def year_dif(base_date: datetime, minus_date: datetime):
     dif = relativedelta(base_date, minus_date).years
 
     return dif
+
+
+def get_current_time():
+    full_datetime = datetime.now()
+    current_time_without_formating = str(full_datetime.today()).split(" ")[-1]
+    formated_current_time: str = current_time_without_formating.replace(":", "_").replace(".", "_")
+    return formated_current_time
