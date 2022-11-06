@@ -2,6 +2,7 @@ from lighttest_supplies.date_methods import get_current_time
 from datetime import datetime
 from os import makedirs
 from pathlib import Path
+import pathlib
 
 
 def boolsum(booleans):
@@ -26,7 +27,7 @@ def create_logging_structure(*parent_directorie: str) -> Path:
 
     unformated_log_directory: str = "/".join(directory_path_components)
     formated_directory_path: Path = Path(unformated_log_directory)
-    return formated_directory_path.open()
+    return formated_directory_path
 
 
 def create_directory(directory_path: str):
@@ -39,7 +40,7 @@ def create_directory(directory_path: str):
     formatted_directory_path: Path = Path(directory_path)
 
     try:
-        makedirs(formatted_directory_path)
+        Path.mkdir(formatted_directory_path)
     except FileExistsError as error:
         print("The directory already exist!")
     finally:
@@ -52,7 +53,7 @@ def create_logging_directory(*parent_directories: str):
     """
     full_directory_path: Path = create_logging_structure(*parent_directories)
     try:
-        makedirs(full_directory_path)
+        Path.mkdir(full_directory_path)
     except FileExistsError as error:
         print("The directory already exist!")
     finally:
