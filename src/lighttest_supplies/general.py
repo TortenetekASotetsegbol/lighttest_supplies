@@ -40,7 +40,7 @@ def create_directory(directory_path: str):
     formatted_directory_path: Path = Path(directory_path)
 
     try:
-        Path.mkdir(formatted_directory_path)
+        Path.mkdir(formatted_directory_path, parents=True)
     except FileExistsError as error:
         print("The directory already exist!")
     finally:
@@ -53,7 +53,7 @@ def create_logging_directory(*parent_directories: str):
     """
     full_directory_path: Path = create_logging_structure(*parent_directories)
     try:
-        Path.mkdir(full_directory_path)
+        Path.mkdir(full_directory_path, parents=True)
     except FileExistsError as error:
         print("The directory already exist!")
     finally:
