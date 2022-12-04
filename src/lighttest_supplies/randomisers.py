@@ -6,6 +6,7 @@ import random
 from random import randrange
 from random import choice, choices
 from lighttest_supplies.json_object_methods import find_value_in_json
+import faker
 
 
 def rand_listelem(list: list):

@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0", "aiohttp"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "lighttest_supplies"
-version = "0.0.8"
+version = "0.0.9"
 authors = [
   { name= "David Toth", email= "tothlldavid@gmail.com" },
 ]

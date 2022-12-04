@@ -6,8 +6,7 @@ import pathlib
 
 
 def boolsum(booleans):
-    formated_bools = booleans.values()
-    only_true = sum(formated_bools) == len(formated_bools)
+    only_true = sum(booleans) == len(booleans)
     return only_true
 
 
