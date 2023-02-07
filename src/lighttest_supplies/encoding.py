@@ -23,6 +23,6 @@ def binary_json_to_json(raw_json=None):
     if raw_json == None:
         return None
     else:
-        req_payload_str = str(raw_json).replace("b'", "").replace("'", "")
+        req_payload_str: str = raw_json.decode(encoding="utf-8")
         req_payload: json = json.loads(req_payload_str)
     return req_payload
