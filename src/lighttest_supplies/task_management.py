@@ -3,7 +3,7 @@ import logging
 from importlib import import_module
 
 
-def get_task_functions(modules):
+def get_task_functions(*modules):
     """
     define a function that takes a list of modules and returns a list of task functions
     """
