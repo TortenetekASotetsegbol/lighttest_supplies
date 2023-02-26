@@ -8,6 +8,7 @@ src/lighttest_supplies/general.py
 src/lighttest_supplies/general_datas.py
 src/lighttest_supplies/json_object_methods.py
 src/lighttest_supplies/randomisers.py
+src/lighttest_supplies/task_management.py
 src/lighttest_supplies/timers.py
 src/lighttest_supplies.egg-info/PKG-INFO
 src/lighttest_supplies.egg-info/SOURCES.txt
